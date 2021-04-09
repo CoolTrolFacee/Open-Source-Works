@@ -1,0 +1,144 @@
+
+html,body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --buscape-1: #ffcd00;
+    --buscape-2: #daaf00;
+    --buscape-3: #c49d00;
+    --price: #22b14c;
+}
+.container{
+    position: relative;
+    width: 1611px;
+}
+.buscape-header{
+    position: sticky;
+    background-color: var(--buscape-1);
+    height: 207px;
+    width: 100%;
+}
+.logo{
+    position: absolute;
+    top:50%;
+    left: 42px;
+    transform: translate(0,-50%);
+}
+.logo img{
+    height: 70%;
+}
+.menu-right{
+    position: absolute;
+    right: 0px;
+    margin: 67px;
+}
+.menu-right button{
+    background-color: var(--buscape-1);
+    border: none;
+    cursor: pointer;
+}
+#purchase-menu{
+    position: absolute;
+    background-color: var(--buscape-2);
+    width: 100%;
+    display: none;
+    min-height: 200px;
+    z-index: 1000;
+    padding: 25px;
+}
+.total-price{
+    width: 100%;
+}
+.total-price h1{
+    text-align: right;
+    border-bottom: 1px solid gray;
+}
+.total-price p{
+    text-align: right;
+    font-weight: 500;
+    font-size: 1.8rem;
+}
+.notf{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    font-size: 3.3rem;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    transform: translate(-50%,-50%);
+}
+.product{
+    height: 560px;
+}
+.product-imgs{
+    position: relative;
+    width: min-content;
+    margin: auto;
+    top:50%;
+    transform: translate(0,-50%);
+}
+.product-imgs img{
+    margin-bottom: 10px;
+    width: 80px;
+    height: 80px;
+    border: 1px solid var(--buscape-1);
+    border-radius: 5px;
+}
+.product-img-big{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: min-content;
+    transform: translate(-50%,-50%);
+}
+.product-img-big img{
+    width: 300px;
+    height: 300px;
+}
+.product-info{
+    display: block;
+    padding: 65px;
+}
+.product-name{
+    position: relative;
+    border-bottom: 1px solid gray;
+}
+.product-name p{
+    margin-bottom: 45px;
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+.product-price{
+    position: relative;
+    margin-top: 45px;
+}
+.product-price div{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.product-price h1{
+    display: inline;
+    color: var(--price);
+    font-weight: 500;
+}
+.product-price button{
+    background-color: var(--price);
+    color: white;
+    font-size: 2.5rem;
+    border: 0;
+    border-radius: 5px;
+    margin-left: 70px;
+}
+.product-price p{
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+.product-price span{
+    color: var(--price);
+}
